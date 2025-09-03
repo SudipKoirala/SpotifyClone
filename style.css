@@ -1,26 +1,53 @@
-*{
-    margin: 0;
-    padding: 0;
+@import url(https://db.onlinewebfonts.com/c/8d3b1bebb7ffe62f42ccdaa235f2a97f?family=Circular+Spotify+Text+Medium);
+
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Circular Spotify Text Medium";
 }
 
-.left{
-    width: 25vw;
+body {
+  background-color: #E55812;
 }
 
-.right{
-    width: 75vw;
+.left {
+  width: 25vw;
 }
 
-.navbar {
-    
-
+.right {
+  width: 75vw;
 }
+
+.navbar {}
 
 .navbar img {
-width: 2rem;
-  margin-left: 1rem;
+  height: 2.5rem;
+  width: 2.5rem;
+
 }
 
+.leftnav {
+  width: 50vw;
+  padding: 1rem;
+  align-items: center;
+
+}
+
+.circle {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #eb7438;
+  height: 2.6rem;
+  width: 2.6rem;
+  border-radius: 50%;
+  margin-left: 2.5rem;
+  background-image: url("home.svg");
+  background-size: 2rem 2rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 
 .search {
@@ -31,21 +58,171 @@ width: 2rem;
   height: 2rem;
   border-radius: 0.3rem;
   border: 1px solid black;
-  padding: 0 0.5rem;  /* space inside */
-  margin-left: 0.7rem;
+  padding: 0 3rem;
+  margin-left: 0.5rem;
+  background-color: #eb7438;
 }
 
+.search .si1 {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+  left: 0.8rem;
+}
+
+.search .si2{
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+  right: 0.8rem;
+}
 .search input {
-  flex: 1;              /* take all remaining space */
+  flex: 1;
   border: none;
   outline: none;
   background: none;
   font-size: 1rem;
+  
 }
 
-.search img {
-  width: 1rem;
-  height: 1rem;
-  margin-left: 0.3rem;
-  cursor: pointer;
+.search p {
+  right: 2rem;
+  position: absolute;
 }
+
+
+.search input::placeholder {
+  color: #ffffff; /* choose any color */
+ opacity: 0.7;
+}
+
+
+.rightnav {
+  flex: 1;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.rightnav ul {
+  align-items: center; 
+
+}
+.rightnav ul li{
+  list-style: none;
+  
+}
+
+.rightnav img{
+  width: 1.1rem;
+  height:  1.1rem;;
+  margin: 0 0 0 0.8rem;
+  margin-right: 0.2rem;
+}
+
+.relement{
+  position: absolute;
+  right: 1rem;
+}
+
+.relement1{
+  align-items: center;
+  gap: 1rem;
+}
+
+.relement2{
+  align-items: center;
+  
+}
+.relement2 p{
+  margin-right: 1rem;
+}
+.relement2 .signup {
+  margin-right: 0.5rem;
+}
+
+.login{
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  width: 4rem;
+  background-color: #bb4002;
+  border-radius: 2rem;
+
+}
+.leftlib {
+  position: relative;
+  background-color: #eb7438;
+  height: 80vh;
+  width: 24vw;
+  top: 0.2rem;
+  right: 0.1rem;
+  left: 0.4rem;
+}
+
+.righthero {
+  position: relative;
+  left: 0.8rem;
+  background-color: #eb7438;
+  height: 79vh;
+  width: 72.6vw;
+  top: 0.2rem;
+  right: 0.5rem;
+  padding: 1rem;
+}
+
+.spotifyPlaylist{
+  padding: 1rem;
+}
+.cardContainer{
+flex: wrap;
+gap: 1rem;
+margin: 0 1rem;
+}
+
+.card {
+  position: relative;
+  width: 10rem;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  background-color: #f29b6f;
+  margin: 1rem 0;
+
+}
+
+.card img{
+  width: 100%;
+  object-fit: contain;
+}
+
+.play{
+  position: absolute;
+    right: 1.2rem;
+    bottom: 0rem;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, bottom 0.6s ease-in-out ;
+    cursor: pointer;
+}
+.card:hover .play{
+  opacity: 1;
+  bottom: 7.9rem;
+}
+
+.footer {
+  position: absolute;
+  bottom: 1rem;
+  display: flex;
+  font-size: 0.5rem;
+  gap: 1rem;
+  width: 23vw;
+
+}
+
+.footer a {
+  color: white;
+}
+

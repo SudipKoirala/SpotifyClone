@@ -14,3 +14,15 @@
     align-items: center;
 }
 
+.round{
+    border-radius: 0.3rem;
+}
+
+.invert{
+    filter: invert(1);
+}
+
+.p-1{
+    padding: 0.8rem;
+}
+
