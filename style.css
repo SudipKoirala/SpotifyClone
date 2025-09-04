@@ -138,22 +138,50 @@ body {
   
 }
 .relement2 p{
+  cursor: pointer;
   margin-right: 1rem;
 }
-.relement2 .signup {
-  margin-right: 0.5rem;
-}
 
-.login{
+
+.loginbtn{
   color: #ffffff;
-  justify-content: center;
-  align-items: center;
+  font-size: 1rem;
+  /* font-weight: bold; */
   height: 2.5rem;
   width: 4rem;
-  background-color: #bb4002;
+  background-color: #eb7438;
   border-radius: 2rem;
-
+border: none;
+cursor: pointer;
 }
+
+.loginbtn:hover {
+  transform: scale(1.1);
+  /* 10% bigger */
+  background-color: #8a3003;
+  font-weight: bold;
+  transition: transform 0.2s, background-color 0.2s, font-weight 0.2s;
+}
+
+.signupbtn:hover {
+  transform: scale(1.1);
+  /* 10% bigger */
+  color: white;
+  font-weight: bold;
+  transition: transform 0.2s, background-color 0.2s, font-weight 0.2s, color 0.2s;
+}
+
+.signupbtn{
+  color: #000000;
+  background-color:#E55812;
+  outline: none;
+  font-size: 1rem;
+  /* font-size: 1rem; */
+  margin-right: 0.5rem;
+  cursor: pointer;
+  border: none;
+}
+
 .leftlib {
   position: relative;
   background-color: #eb7438;
@@ -164,33 +192,55 @@ body {
   left: 0.4rem;
 }
 
+.spotifyPlaylist{
+  padding: 1rem;
+}
+
 .righthero {
   position: relative;
   left: 0.8rem;
   background-color: #eb7438;
-  height: 79vh;
-  width: 72.6vw;
+  max-height: 79vh;
+  width: 70vw;
   top: 0.2rem;
   right: 0.5rem;
   padding: 1rem;
 }
 
-.spotifyPlaylist{
-  padding: 1rem;
-}
 .cardContainer{
-flex: wrap;
-gap: 1rem;
-margin: 0 1rem;
+max-height: 70vh;
+ overflow-y: scroll;
+gap: 1.5rem;
+margin: 1rem 0 1rem 1rem;
+flex-wrap: wrap;
 }
 
+.cardContainer::-webkit-scrollbar {
+  width: 8px;             /* width of the scrollbar */
+}
+
+.cardContainer::-webkit-scrollbar-track {
+  background: #f1f1f1;    /* track color */
+  border-radius: 4px;
+}
+
+/* Scrollbar thumb */
+.cardContainer::-webkit-scrollbar-thumb {
+  background:  #f29b6f;   /* thumb color */
+  border-radius: 4px;
+}
+
+/* Scrollbar thumb hover */
+.cardContainer::-webkit-scrollbar-thumb:hover {
+  background: #8a3003;
+}
 .card {
   position: relative;
-  width: 10rem;
+  width: 9rem;
   padding: 1rem;
   border-radius: 0.3rem;
   background-color: #f29b6f;
-  margin: 1rem 0;
+  
 
 }
 
@@ -212,6 +262,35 @@ margin: 0 1rem;
   bottom: 7.9rem;
 }
 
+.playbar{
+  position: absolute;
+  height: 1rem;
+  bottom: 1rem;
+  padding: 1rem;
+  width: 88%;
+  background-color: #8a3003;
+  
+}
+.song{
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.song img{
+  height: 2rem;
+  width: 2rem;
+  
+  filter: invert(1);
+}
+#play{
+cursor: pointer;
+}
+
+#play:hover{
+ transform: scale(1.1);
+ transition: transform 0.2s; 
+}
 .footer {
   position: absolute;
   bottom: 1rem;
